@@ -30,6 +30,10 @@
     .btn-gold:hover { background: #d4b05a; transform: translateY(-1px); }
     .btn-outline { background: transparent; color: var(--cream); border: 1px solid rgba(232,224,208,0.35); }
     .btn-outline:hover { border-color: var(--cream); transform: translateY(-1px); }
+    .btn svg { display: inline-block; vertical-align: middle; margin-right: 8px; margin-top: -2px; }
+    /* INLINE CTA */
+    .inline-cta { margin-top: 2.5rem; }
+    .section-cta { margin-top: 2.5rem; display: flex; gap: 12px; flex-wrap: wrap; }
     /* TITLES */
     .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 400; color: var(--cream); margin-bottom: 1.5rem; }
     .section-body { max-width: 660px; color: var(--muted); font-size: 1.05rem; margin-bottom: 3.5rem; }
@@ -115,7 +119,10 @@
     <p class="hero-quote">"Ninguém é inocente."</p>
     <p class="hero-sub">Um jogo construído por quem joga.</p>
     <div class="hero-actions">
-      <a href="#" class="btn btn-gold">Entrar na Comunidade</a>
+      <a href="https://discord.gg/mwp6Z8s8ux" target="_blank" rel="noopener noreferrer" class="btn btn-gold">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.031.053a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+        Entrar no Discord
+      </a>
       <a href="#about" class="btn btn-outline">Ver Projeto</a>
     </div>
   </section>
@@ -146,10 +153,16 @@
     </div>
     <p class="reveal" style="max-width:600px;color:var(--muted);font-size:1.05rem;">A comunidade não é espectadora. Cada voto, cada teste, cada sugestão molda diretamente o que Conduta se torna.</p>
     <ul class="feature-list reveal">
-      <li>Jogadores decidem mecânicas</li>
-      <li>Narrativa evolui com votação</li>
-      <li>Consequências persistem</li>
+      <li>Jogadores decidem mecânicas — no Discord</li>
+      <li>Narrativa evolui com votação em tempo real</li>
+      <li>Consequências persistem entre sessões</li>
     </ul>
+    <div class="inline-cta reveal">
+      <a href="https://discord.gg/mwp6Z8s8ux" target="_blank" rel="noopener noreferrer" class="btn btn-gold">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.031.053a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+        Quero definir o jogo
+      </a>
+    </div>
   </section>
 
   <section id="participate">
@@ -177,6 +190,12 @@
         <p class="p-card-body">Ver decisões acontecendo em tempo real. Transparência total.</p>
       </div>
     </div>
+    <div class="section-cta reveal">
+      <a href="https://discord.gg/mwp6Z8s8ux" target="_blank" rel="noopener noreferrer" class="btn btn-gold">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.031.053a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+        Entrar no Discord
+      </a>
+    </div>
   </section>
 
   <section id="roadmap">
@@ -189,8 +208,9 @@
       <div class="rm-step"><div class="rm-step-line"><div class="rm-dot"></div></div><span class="rm-label">Lançamento</span></div>
     </div>
     <div class="roadmap-box reveal">
-      <p class="roadmap-box-label">O que está sendo decidido agora:</p>
+      <p class="roadmap-box-label">O que está sendo decidido agora — entre e vote:</p>
       <ul><li>Sistema de votação</li><li>Mecânica principal</li></ul>
+      <a href="https://discord.gg/mwp6Z8s8ux" target="_blank" rel="noopener noreferrer" style="display:inline-block;margin-top:1.5rem;font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.3);padding-bottom:2px;transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.3)'">Participar da votação →</a>
     </div>
   </section>
 
@@ -216,13 +236,16 @@
   <section id="cta">
     <span class="cta-line1 reveal">Você vai observar...</span>
     <span class="cta-line2 reveal">ou participar?</span>
-    <a href="#" class="btn btn-gold reveal">Entrar na Comunidade</a>
+    <a href="https://discord.gg/mwp6Z8s8ux" target="_blank" rel="noopener noreferrer" class="btn btn-gold reveal">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.031.053a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+      Entrar no Discord
+    </a>
   </section>
 
   <footer>
     <a href="#hero" class="footer-brand">CONDUTA</a>
     <nav class="footer-nav">
-      <a href="#" class="footer-link">Discord</a>
+      <a href="https://discord.gg/mwp6Z8s8ux" target="_blank" rel="noopener noreferrer" class="footer-link">Discord</a>
       <a href="/conduta/policy" class="footer-link">Privacidade</a>
       <a href="/conduta/terms" class="footer-link">Termos</a>
     </nav>
