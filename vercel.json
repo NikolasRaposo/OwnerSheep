@@ -1,3 +1,7 @@
 {
-  "outputDirectory": "public"
+  "outputDirectory": "public",
+  "redirects": [
+    { "source": "/", "destination": "/conduta", "permanent": false }
+  ]
 }
+
