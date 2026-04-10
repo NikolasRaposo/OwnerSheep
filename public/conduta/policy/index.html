@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade — Conduta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+SC:wght@400;600;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #1a1812;
+      --bg3:      #2a2620;
+      --gold:     #c9a84c;
+      --cream:    #e8e0d0;
+      --muted:    #9a9080;
+      --border:   rgba(201,168,76,0.18);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--cream);
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      line-height: 1.8;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 1000;
+      opacity: 0.5;
+    }
+
+    nav {
+      padding: 24px 48px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-brand {
+      font-family: 'Cormorant SC', serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.1em;
+      color: var(--cream);
+      text-decoration: none;
+    }
+
+    .nav-back {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.2s;
+    }
+    .nav-back:hover { color: var(--cream); }
+    .nav-back svg { width: 14px; height: 14px; }
+
+    .legal-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 80px 48px 120px;
+    }
+
+    .legal-label {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+
+    .legal-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      font-weight: 400;
+      color: var(--cream);
+      line-height: 1.1;
+      margin-bottom: 0.6rem;
+    }
+
+    .legal-date {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 3.5rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .legal-section {
+      margin-bottom: 3rem;
+    }
+
+    .legal-section h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.45rem;
+      font-weight: 600;
+      color: var(--cream);
+      margin-bottom: 1rem;
+    }
+
+    .legal-section p {
+      color: var(--muted);
+      font-size: 0.97rem;
+      margin-bottom: 1rem;
+    }
+
+    .legal-section ul {
+      list-style: none;
+      margin: 0.5rem 0 1rem 0;
+    }
+
+    .legal-section ul li {
+      color: var(--muted);
+      font-size: 0.97rem;
+      padding: 6px 0 6px 20px;
+      position: relative;
+    }
+
+    .legal-section ul li::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 15px;
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+    }
+
+    .legal-section a {
+      color: var(--gold);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(201,168,76,0.3);
+      transition: border-color 0.2s;
+    }
+    .legal-section a:hover { border-color: var(--gold); }
+
+    .legal-divider {
+      height: 1px;
+      background: var(--border);
+      margin: 2.5rem 0;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-brand {
+      font-family: 'Cormorant SC', serif;
+      font-size: 1rem;
+      letter-spacing: 0.1em;
+      color: var(--cream);
+      text-decoration: none;
+    }
+
+    .footer-links { display: flex; gap: 28px; flex-wrap: wrap; }
+
+    .footer-link {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+    .footer-link:hover { color: var(--cream); }
+
+    .footer-copy { color: var(--muted); font-size: 0.8rem; }
+
+    @media (max-width: 640px) {
+      nav, .legal-wrap, footer { padding-left: 24px; padding-right: 24px; }
+      footer { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/conduta" class="nav-brand">CONDUTA</a>
+    <a href="/conduta" class="nav-back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M19 12H5M12 5l-7 7 7 7"/>
+      </svg>
+      Voltar ao site
+    </a>
+  </nav>
+
+  <main class="legal-wrap">
+    <p class="legal-label">Legal</p>
+    <h1 class="legal-title">Política de<br>Privacidade</h1>
+    <p class="legal-date">Vigente a partir de 07 de abril de 2026</p>
+
+    <div class="legal-section">
+      <p>Esta política de privacidade se aplica ao aplicativo Conduta (doravante denominado "Aplicativo") para dispositivos móveis, criado pela OwnerSheep Studio (doravante denominada "Prestador de Serviços") como um serviço gratuito. Este serviço é fornecido "COMO ESTÁ".</p>
+    </div>
+
+    <div class="legal-section">
+      <h2>Coleta e Uso de Informações</h2>
+      <p>O Aplicativo coleta informações quando você o baixa e utiliza. Essas informações podem incluir:</p>
+      <ul>
+        <li>O endereço de Protocolo de Internet do seu dispositivo (ex.: endereço IP)</li>
+        <li>As páginas do Aplicativo que você visita, a data e hora da visita e o tempo gasto nessas páginas</li>
+        <li>O tempo total gasto no Aplicativo</li>
+        <li>O sistema operacional utilizado em seu dispositivo móvel</li>
+      </ul>
+      <p>O Aplicativo não coleta informações precisas sobre a localização do seu dispositivo móvel.</p>
+      <p>O Aplicativo utiliza tecnologias de Inteligência Artificial (IA) para aprimorar a experiência do usuário e fornecer determinadas funcionalidades. Os componentes de IA podem processar dados do usuário para entregar conteúdo personalizado, recomendações ou funcionalidades automatizadas. Todo o processamento de IA é realizado em conformidade com esta política de privacidade e as leis aplicáveis.</p>
+      <p>O Prestador de Serviços pode usar as informações fornecidas para entrar em contato com você periodicamente, a fim de fornecer informações importantes, avisos necessários e promoções.</p>
+    </div>
+
+    <div class="legal-divider"></div>
+
+    <div class="legal-section">
+      <h2>Acesso de Terceiros</h2>
+      <p>Apenas dados agregados e anonimizados são periodicamente transmitidos a serviços externos para auxiliar o Prestador de Serviços na melhoria do Aplicativo. O Aplicativo utiliza serviços de terceiros que possuem suas próprias políticas de privacidade:</p>
+      <ul>
+        <li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
+        <li><a href="https://www.facebook.com/about/privacy/update/printable" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+      </ul>
+      <p>O Prestador de Serviços pode divulgar informações quando exigido por lei, para proteger direitos ou segurança, investigar fraudes ou responder a solicitações governamentais.</p>
+    </div>
+
+    <div class="legal-divider"></div>
+
+    <div class="legal-section">
+      <h2>Direito de Exclusão</h2>
+      <p>Você pode interromper toda a coleta de informações pelo Aplicativo simplesmente desinstalando-o, usando os processos de desinstalação padrão disponíveis no seu dispositivo móvel ou na loja de aplicativos.</p>
+    </div>
+
+    <div class="legal-section">
+      <h2>Política de Retenção de Dados</h2>
+      <p>O Prestador de Serviços reterá os dados fornecidos pelo usuário enquanto você usar o Aplicativo e por um período razoável após isso. Para solicitar a exclusão dos seus dados, entre em contato pelo e-mail <a href="mailto:owner.sheep.studio@gmail.com">owner.sheep.studio@gmail.com</a>.</p>
+    </div>
+
+    <div class="legal-divider"></div>
+
+    <div class="legal-section">
+      <h2>Crianças</h2>
+      <p>O Prestador de Serviços não utiliza o Aplicativo para solicitar dados de crianças menores de 13 anos ou fazer marketing direcionado a elas. Caso identifique que uma criança forneceu informações pessoais, os dados serão imediatamente excluídos dos servidores. Pais ou responsáveis devem contatar <a href="mailto:owner.sheep.studio@gmail.com">owner.sheep.studio@gmail.com</a> em caso de dúvidas.</p>
+    </div>
+
+    <div class="legal-section">
+      <h2>Segurança</h2>
+      <p>O Prestador de Serviços se preocupa com a proteção das suas informações e fornece salvaguardas físicas, eletrônicas e procedimentais para proteger os dados processados e mantidos.</p>
+    </div>
+
+    <div class="legal-section">
+      <h2>Alterações</h2>
+      <p>Esta Política de Privacidade pode ser atualizada periodicamente. O Prestador de Serviços notificará quaisquer alterações atualizando esta página. Recomenda-se consultá-la regularmente.</p>
+    </div>
+
+    <div class="legal-section">
+      <h2>Seu Consentimento</h2>
+      <p>Ao usar o Aplicativo, você consente com o processamento das suas informações conforme estabelecido nesta Política de Privacidade.</p>
+    </div>
+
+    <div class="legal-section">
+      <h2>Contato</h2>
+      <p>Dúvidas sobre privacidade? Entre em contato com o Prestador de Serviços pelo e-mail <a href="mailto:owner.sheep.studio@gmail.com">owner.sheep.studio@gmail.com</a>.</p>
+    </div>
+  </main>
+
+  <footer>
+    <a href="/conduta" class="footer-brand">CONDUTA</a>
+    <nav class="footer-links">
+      <a href="#" class="footer-link">Discord</a>
+      <a href="/conduta/policy" class="footer-link">Privacidade</a>
+      <a href="/conduta/terms" class="footer-link">Termos</a>
+    </nav>
+    <p class="footer-copy">© 2026 Conduta. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
