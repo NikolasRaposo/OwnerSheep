@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Termos e Condições — Conduta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+SC:wght@400;600;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #1a1812;
+      --bg3:      #2a2620;
+      --gold:     #c9a84c;
+      --cream:    #e8e0d0;
+      --muted:    #9a9080;
+      --border:   rgba(201,168,76,0.18);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--cream);
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      line-height: 1.8;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 1000;
+      opacity: 0.5;
+    }
+
+    nav {
+      padding: 24px 48px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-brand {
+      font-family: 'Cormorant SC', serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.1em;
+      color: var(--cream);
+      text-decoration: none;
+    }
+
+    .nav-back {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.2s;
+    }
+    .nav-back:hover { color: var(--cream); }
+    .nav-back svg { width: 14px; height: 14px; }
+
+    .legal-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 80px 48px 120px;
+    }
+
+    .legal-label {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+
+    .legal-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      font-weight: 400;
+      color: var(--cream);
+      line-height: 1.1;
+      margin-bottom: 0.6rem;
+    }
+
+    .legal-date {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 3.5rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .legal-section { margin-bottom: 3rem; }
+
+    .legal-section h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.45rem;
+      font-weight: 600;
+      color: var(--cream);
+      margin-bottom: 1rem;
+    }
+
+    .legal-section p {
+      color: var(--muted);
+      font-size: 0.97rem;
+      margin-bottom: 1rem;
+    }
+
+    .legal-section ul {
+      list-style: none;
+      margin: 0.5rem 0 1rem 0;
+    }
+
+    .legal-section ul li {
+      color: var(--muted);
+      font-size: 0.97rem;
+      padding: 6px 0 6px 20px;
+      position: relative;
+    }
+
+    .legal-section ul li::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 15px;
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+    }
+
+    .legal-section a {
+      color: var(--gold);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(201,168,76,0.3);
+      transition: border-color 0.2s;
+    }
+    .legal-section a:hover { border-color: var(--gold); }
+
+    .legal-divider {
+      height: 1px;
+      background: var(--border);
+      margin: 2.5rem 0;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-brand {
+      font-family: 'Cormorant SC', serif;
+      font-size: 1rem;
+      letter-spacing: 0.1em;
+      color: var(--cream);
+      text-decoration: none;
+    }
+
+    .footer-links { display: flex; gap: 28px; flex-wrap: wrap; }
+
+    .footer-link {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+    .footer-link:hover { color: var(--cream); }
+
+    .footer-copy { color: var(--muted); font-size: 0.8rem; }
+
+    @media (max-width: 640px) {
+      nav, .legal-wrap, footer { padding-left: 24px; padding-right: 24px; }
+      footer { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="conduta.html" class="nav-brand">CONDUTA</a>
+    <a href="conduta.html" class="nav-back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M19 12H5M12 5l-7 7 7 7"/>
+      </svg>
+      Voltar ao site
+    </a>
+  </nav>
+
+  <main class="legal-wrap">
+    <p class="legal-label">Legal</p>
+    <h1 class="legal-title">Termos e<br>Condições</h1>
+    <p class="legal-date">Vigente a partir de 07 de abril de 2026</p>
+
+    <div class="legal-section">
+      <p>Estes termos e condições se aplicam ao aplicativo Conduta (doravante denominado "Aplicativo") para dispositivos móveis, criado pela OwnerSheep Studio (doravante denominada "Prestador de Serviços") como um serviço gratuito.</p>
+      <p>Ao baixar ou utilizar o Aplicativo, você automaticamente concorda com os termos a seguir. Recomenda-se fortemente a leitura e compreensão completa destes termos antes de usar o Aplicativo.</p>
+    </div>
+
+    <div class="legal-divider"></div>
+
+    <div class="legal-section">
+      <h2>Propriedade Intelectual</h2>
+      <p>A cópia ou modificação não autorizada do Aplicativo, de qualquer parte dele ou de nossas marcas registradas é estritamente proibida. Tentativas de extrair o código-fonte, traduzir o Aplicativo para outros idiomas ou criar versões derivadas não são permitidas.</p>
+      <p>Todas as marcas registradas, direitos autorais, direitos de banco de dados e outros direitos de propriedade intelectual relacionados ao Aplicativo permanecem como propriedade do Prestador de Serviços.</p>
+    </div>
+
+    <div class="legal-section">
+      <h2>Modificações do Serviço</h2>
+      <p>O Prestador de Serviços se reserva o direito de modificar o Aplicativo ou cobrar pelos serviços a qualquer momento e por qualquer motivo. Quaisquer cobranças pelo Aplicativo ou seus serviços serão claramente comunicadas a você.</p>
+    </div>
+
+    <div class="legal-divider"></div>
+
+    <div class="legal-section">
+      <h2>Dados Pessoais e Segurança do Dispositivo</h2>
+      <p>O Aplicativo armazena e processa dados pessoais fornecidos por você para a prestação do serviço. É sua responsabilidade manter a segurança do seu dispositivo e o acesso ao Aplicativo.</p>
+      <p>O Prestador de Serviços desaconselha fortemente o jailbreak ou root do dispositivo, pois tais ações podem comprometer recursos de segurança e resultar no mau funcionamento do Aplicativo.</p>
+    </div>
+
+    <div class="legal-section">
+      <h2>Serviços de Terceiros</h2>
+      <p>O Aplicativo utiliza serviços de terceiros com seus próprios Termos e Condições:</p>
+      <ul>
+        <li><a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
+        <li><a href="https://www.facebook.com/legal/terms/plain_text_terms" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+      </ul>
+    </div>
+
+    <div class="legal-divider"></div>
+
+    <div class="legal-section">
+      <h2>Conectividade e Responsabilidade</h2>
+      <p>Algumas funções do Aplicativo requerem conexão ativa à internet. O Prestador de Serviços não pode ser responsabilizado se o Aplicativo não funcionar plenamente devido à falta de acesso à Wi-Fi ou ao esgotamento do plano de dados.</p>
+      <p>Ao usar o Aplicativo fora de uma área Wi-Fi, os termos do seu provedor de rede móvel ainda se aplicam. Você aceita a responsabilidade por quaisquer encargos resultantes, incluindo tarifas de roaming de dados.</p>
+      <p>O Prestador de Serviços não pode ser responsabilizado por situações fora de seu controle, como o dispositivo ficar sem bateria durante o uso.</p>
+    </div>
+
+    <div class="legal-section">
+      <h2>Inteligência Artificial</h2>
+      <p>O Aplicativo incorpora tecnologias de Inteligência Artificial (IA) para fornecer determinadas funcionalidades. Ao usar o Aplicativo, você reconhece e concorda que a IA pode ser utilizada para processar dados e entregar funcionalidades. O Prestador de Serviços garante que todo uso de IA está em conformidade com as leis aplicáveis e é projetado para beneficiar a experiência do usuário.</p>
+    </div>
+
+    <div class="legal-divider"></div>
+
+    <div class="legal-section">
+      <h2>Atualizações e Encerramento</h2>
+      <p>O Prestador de Serviços pode lançar atualizações do Aplicativo periodicamente. Você concorda em aceitar as atualizações quando oferecidas. O Prestador de Serviços não garante que o Aplicativo será sempre compatível com a versão do sistema operacional instalada no seu dispositivo.</p>
+      <p>O Prestador de Serviços pode encerrar o Aplicativo a qualquer momento sem aviso prévio. Nesse caso, os direitos e licenças concedidos a você serão extintos e você deverá cessar o uso e excluir o Aplicativo.</p>
+    </div>
+
+    <div class="legal-section">
+      <h2>Alterações nestes Termos</h2>
+      <p>O Prestador de Serviços pode atualizar periodicamente estes Termos e Condições. Recomenda-se revisar esta página regularmente. As alterações entram em vigor assim que publicadas.</p>
+    </div>
+
+    <div class="legal-section">
+      <h2>Contato</h2>
+      <p>Dúvidas ou sugestões sobre estes Termos e Condições? Entre em contato pelo e-mail <a href="mailto:owner.sheep.studio@gmail.com">owner.sheep.studio@gmail.com</a>.</p>
+    </div>
+  </main>
+
+  <footer>
+    <a href="conduta.html" class="footer-brand">CONDUTA</a>
+    <nav class="footer-links">
+      <a href="#" class="footer-link">Discord</a>
+      <a href="privacy.html" class="footer-link">Privacidade</a>
+      <a href="terms.html" class="footer-link">Termos</a>
+    </nav>
+    <p class="footer-copy">© 2026 Conduta. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
